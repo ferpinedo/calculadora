@@ -65,7 +65,11 @@ var Calculadora = {
     this.display.textContent = text;
   },
 
-  
+  effect : function(button)
+  {
+    button.style.padding = "1px";
+    setTimeout(function(){button.style.padding = "0px";}, 50);
+  },
 
   btnNumber : function(button)
   {
