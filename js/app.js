@@ -4,10 +4,7 @@ var Calculadora = {
   display : document.getElementById('display'),
   buttons : document.getElementsByClassName('tecla'),
   result: 0,
-
-  op : ["", "", ""],
-  //   id del operador, 1er numero, 2do numero
-
+  op : ["", "", ""],  //   id del operador, 1er numero, 2do numero
   account : 0,
 
   setDisplayText: function(text)
@@ -57,7 +54,6 @@ var Calculadora = {
         text = text.replace("r", "");
         currentText = "";
       }
-
       text = currentText + text;
     }
 
